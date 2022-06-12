@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/telaCadastro.css">
+</head>
+<body>
+    <form action="/cadastrar" method="post">
+        <div id="cadastro">
+            <h1>Login</h1>
+            <label>CPF</label><input type="text" name= "cpf" required id = "cpf" oninput = "checkCpfMask()" maxlength="14">
+            <label>Nome Completo</label><input type="text" name= "nome" required >
+            <label>E-Mail</label><input type="text" name= "email" required>
+            <label>Telefone</label><input type="text" name= "telefone" required id = "telefone" oninput = "checkTelefoneMask()" maxlength="13">
+            <label>CEP</label><input type="text" name= "cep" required id = "cep" oninput="checkCepMask()" maxlength="9">
+            <label>Cidade</label><input class = "endereco" type="text" name= "cidade" required>
+            <label>Bairro</label><input class = "endereco" type="text" name= "bairro" required>
+            <label>Endereço</label><input class = "endereco" type="text" name= "endereco" required>
+            <label>Complemento</label><input class = "endereco"  type="text" name= "complemento">
+            <label>Número</label><input type="number" name= "numero" required>
+            <button>Cadastrar</button>
+        </div>
+    </form>
+    
+    <% if (isCpfValido === false) { %>
+        <script>
+            sessionStorage.setItem("erroCpf", true);
+            </script>
+       <% } else if (isCpfValido === true) { %>
+        <script>
+            sessionStorage.setItem("erroCpf", false);
+            </script>
+       <% } %> 
+       
+       <script src = "scripts/cadastro.js"></script>
+</body>
+</html>

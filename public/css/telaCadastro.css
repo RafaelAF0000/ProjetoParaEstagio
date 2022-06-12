@@ -1,0 +1,41 @@
+
+* {
+    padding:0;
+    margin:0;
+}
+
+div#cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(161, 161, 236);
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+div#cadastro > input {
+    width: 200px;
+    height: 12px;
+    margin-left: 50px;
+}
+
+div#cadastro > h1 {
+    text-align: center;
+}
+
+div#cadastro > label {
+    margin-left: 10px;
+}
+
+div#cadastro > button {
+    width: 80px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 65%;
+}
