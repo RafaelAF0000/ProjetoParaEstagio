@@ -2,6 +2,14 @@
 * {
     padding:0;
     margin:0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/21/00/42/hexagon-3337447_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 div#cadastro {
@@ -14,15 +22,19 @@ div#cadastro {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgb(161, 161, 236);
+    background-image: linear-gradient(180deg, #e809ff, #0fe2ff);
     padding-bottom: 10px;
     border-radius: 10px;
 }
 
 div#cadastro > input {
     width: 200px;
-    height: 12px;
+    height: 16px;
     margin-left: 50px;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 div#cadastro > h1 {
