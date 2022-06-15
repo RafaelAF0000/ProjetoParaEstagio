@@ -8,12 +8,19 @@ header{
     width: 100vw;
     height: 10vh;
     position: fixed;
+    margin-top: 0px;
+    z-index: 1;
 }
+
 
 main{
     background-color: rgb(70, 70, 70);
     width: 80vw;
-    height: 100vh;
+    height: 80vh;
+    margin-left: 0px;
+    margin-top: 10vh;
+    position: absolute;
+
 }
 
 aside{
@@ -22,32 +29,13 @@ aside{
     height: 80vh;
     position: absolute;
     right: 0;
-    top: 20vh;
+    top: 10vh
 }
 
 footer {
     background-color: rgb(50, 50, 50);
     width: 100vw;
     height: 10vh;
-}
-
-button#deslogar{
-    width: 70px;
-    height: 70px;
+    margin-top: 90vh;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-dialog#usuarios {
-    width: 50vw;
-    height: 50vh;
-}
-
-select#selectEstado{
-    position: absolute;
-    left: 100px;
-    top: 0;
-    z-index: 1;
 }

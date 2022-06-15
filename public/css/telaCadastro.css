@@ -16,8 +16,8 @@ div#cadastro {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 300px;
-    height: 500px;
+    width: 50vw;
+    height: 50vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,9 +28,11 @@ div#cadastro {
 }
 
 div#cadastro > input {
+    
     width: 200px;
     height: 16px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     border: 0px;
     border-radius: 10px;
     padding: 5px;
@@ -42,12 +44,17 @@ div#cadastro > h1 {
 }
 
 div#cadastro > label {
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div#cadastro > button {
-    width: 80px;
-    height: 25px;
+    background-color: #e809ff;
+    width: 8vw;
+    height: 3vh;
     margin-top: 8px;
-    margin-left: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: 0px;
 }
