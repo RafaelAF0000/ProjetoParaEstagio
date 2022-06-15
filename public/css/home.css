@@ -25,8 +25,29 @@ aside{
     top: 20vh;
 }
 
-footer{
+footer {
     background-color: rgb(50, 50, 50);
     width: 100vw;
     height: 10vh;
+}
+
+button#deslogar{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+dialog#usuarios {
+    width: 50vw;
+    height: 50vh;
+}
+
+select#selectEstado{
+    position: absolute;
+    left: 100px;
+    top: 0;
+    z-index: 1;
 }
