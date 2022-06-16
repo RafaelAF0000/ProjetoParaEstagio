@@ -66,7 +66,7 @@ fillEstadoTable()
         
         const tabelaUsuarios = document.getElementById("tabelaUsuarios")
         const errorMessage = document.getElementById("errorMessage")
-        
+
         if(!hasResults) {
             tabelaUsuarios.style.display = "none"
             errorMessage.innerText = "Sem resultados"
@@ -77,3 +77,6 @@ fillEstadoTable()
         }
 
     }
+
+// Usado para apresentar a Mensagem de erro caso o banco de dados Esteja Vazio
+window.addEventListener("load", filtrarEstado) 
