@@ -9,23 +9,26 @@
 </head>
 <body>
 
-    <dialog id="usuarios">
-            <select name="Uf" id = "selectEstado">
-                <option> Selecione </option>
+    <dialog id = "usuarios">
+        <div id = "conteudo">
+            <select name="Uf" id = "selectEstado" onchange="filtrarEstado()">
+                <option value = "all"> Todos os Estados </option>
             </select>
-    
-            <table>
+            <h1 id = "errorMessage"></h1>
+            <table id = "tabelaUsuarios">
                 <tr>
                     <td>Nome</td>
                     <td>CEP</td>
                     <td>CPF</td>
+                    <td>Estado</td>
                 </tr>
 
                 <% for(let i = 0; i < dadosUser.length; i++){ %>
-                    <tr>
+                    <tr class = "trDadosUser">
                         <td class = "tdNome"><%= dadosUser[i].nome %></td>
                         <td class = "tdCep"><%= dadosUser[i].cep %></td>
                         <td class = "tdCpf"><%= dadosUser[i].cpf %></td>
+                        <td class = "tdEstado"></td>
                         <form action="/deletarUsuario" method="post">
                             <td class = "temBotao">
                                 <button class = "deletar" name = "cpf" value = "<%= dadosUser[i].cpf %>">Delete</button>
@@ -37,7 +40,7 @@
                     </tr>
                 <%}%>
             </table>
-
+        </div>
     </dialog>
     
     <header>
