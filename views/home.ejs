@@ -9,24 +9,48 @@
 </head>
 <body>
 
-    <form action="/deslogar" method="post">
-        <button id = "deslogar">Deslogar</button>
-    </form>
+    <dialog id="usuarios">
+            <select name="Uf" id = "selectEstado">
+                <option> Selecione </option>
+            </select>
+    
+            <table>
+                <tr>
+                    <td>Nome</td>
+                    <td>CEP</td>
+                    <td>CPF</td>
+                </tr>
 
-    <form action="/buscarPorEstado">
-        <select name="Uf" id = "selectEstado">
-            <option> Selecione </option>
-        </select>
-    </form>
+                <% for(let i = 0; i < dadosUser.length; i++){ %>
+                    <tr>
+                        <td class = "tdNome"><%= dadosUser[i].nome %></td>
+                        <td class = "tdCep"><%= dadosUser[i].cep %></td>
+                        <td class = "tdCpf"><%= dadosUser[i].cpf %></td>
+                        <form action="/deletarUsuario" method="post">
+                            <td class = "temBotao">
+                                <button class = "deletar" name = "cpf" value = "<%= dadosUser[i].cpf %>">Delete</button>
+                            </td>
+                         </form>
+                        <td class = "temBotao">
+                            <button class = "alterar" value = "<%= dadosUser[i].cpf %>">Alterar</button>
+                        </td>
+                    </tr>
+                <%}%>
+            </table>
+
+    </dialog>
     
     <header>
+        <form action="/deslogar" method="post">
+            <button id = "deslogar">Deslogar</button>
+        </form>
+        <button id = "mostraDadosUser">Mostrar Usuarios</button>
         <nav>
-
         </nav>
     </header>
-
+    
     <main>
-
+        
     </main>
 
     <aside>
@@ -38,6 +62,6 @@
     </footer>
 
 
-    <script src = "script/home.js"></script>
+    <script src = "scripts/home.js"></script>
 </body>
 </html>
