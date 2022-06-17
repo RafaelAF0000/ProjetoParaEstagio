@@ -28,7 +28,7 @@
                         <td class = "tdNome"><%= dadosUser[i].nome %></td>
                         <td class = "tdCep"><%= dadosUser[i].cep %></td>
                         <td class = "tdCpf"><%= dadosUser[i].cpf %></td>
-                        <td class = "tdEstado"></td>
+                        <td class = "tdEstado"><%= dadosUser[i].estado %></td>
                         <form action="/deletarUsuario" method="post">
                             <td class = "temBotao">
                                 <button class = "deletar" name = "cpf" value = "<%= dadosUser[i].cpf %>">Delete</button>

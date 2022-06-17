@@ -57,6 +57,7 @@ function cepAutoComplete() {
                 enderecoCompleto[1].value = cepDados.bairro
                 enderecoCompleto[2].value = cepDados.logradouro
                 enderecoCompleto[3].value = cepDados.complemento
+                enderecoCompleto[4].value = cepDados.uf
             }
         })
         .catch(error => {

@@ -6,7 +6,7 @@ module.exports = () => {
     app.get("/home", (req, res) => {
         const session = req.session
         if (session.logado == true) {
-            con.query("SELECT nome, cpf, cep FROM user", (error,result) => {
+            con.query("SELECT nome, cpf, cep, estado FROM user", (error,result) => {
                 if(error) {
                     res.redirect("/login")
                 }

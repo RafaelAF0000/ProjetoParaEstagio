@@ -26,26 +26,6 @@ fillEstadoSelect()
 
 openUserDialog()
 
-    function fillEstadoTable(){
-        const tdEstado = document.getElementsByClassName("tdEstado")
-        const tdCep = document.getElementsByClassName("tdCep")
-        for (let i = 0; i < tdCep.length; i++) {
-            const cleanValue = tdCep[i].innerText.replace(/\D/g, "")
-            const url = `https://viacep.com.br/ws/${cleanValue}/json/`
-            fetch(url)
-            .then(res => {
-                if(res.ok) {
-                    return res.json()
-                }
-            })
-            .then(dadosCep => {
-                tdEstado[i].innerText = dadosCep.uf
-            })
-        }
-    }
-
-fillEstadoTable()
-
     function filtrarEstado(){
         const selectEstado = document.getElementById("selectEstado")
         const trDadosUser = document.getElementsByClassName("trDadosUser")
