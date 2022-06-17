@@ -62,6 +62,7 @@ function cepAutoComplete() {
         })
         .catch(error => {
             alert("Erro na conexão")
+            console.log(error)
         })
     }
 }
