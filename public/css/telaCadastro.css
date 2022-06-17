@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("https://cdn.pixabay.com/photo/2018/04/21/00/42/hexagon-3337447_1280.jpg");
+    background-image: url("../img/interior1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -16,13 +16,13 @@ div#cadastro {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 60vw;
+    width: 55vw;
     height: 70vh;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 28%;
     transform: translate(-50%,-50%);
-    background-image: linear-gradient(180deg, #e809ff, #0fe2ff);
+    background-image: linear-gradient(90deg, #0055d4, #00e1ff);
     padding-bottom: 10px;
     border-radius: 10px;
 }
@@ -31,16 +31,24 @@ div#cadastro > h1 {
     text-align: center;
 }
 
-div#cadastro > div#dados_essenciais,div#localização{
+div#cadastro > div#dados_essenciais{
     width: 50%;
     height: 100%;
+    position: relative;
+}
+
+div#cadastro > div#localização{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 6vh
 }
 
 div#cadastro > div#localização> input {
+    display:block;
     width: 200px;
     height: 15px;
-    margin-left: auto;
-    margin-right: auto;
     border: 0px;
     border-radius: 10px;
     padding: 5px;
@@ -48,6 +56,7 @@ div#cadastro > div#localização> input {
 }
 
 div#cadastro > div#dados_essenciais > input {
+    display: block;
     width: 200px;
     height: 15px;
     border: 0px;
@@ -62,8 +71,7 @@ div#btn{
 
 }
 div#cadastro > div#btn > button {
-    float: left;
-    background-color: #e809ff;
+    background-color: #0055d4;
     width: 12vw;
     height: 5vh;
     margin-left: 10vw;
@@ -73,8 +81,7 @@ div#cadastro > div#btn > button {
 }
 
 div#cadastro > div#btn input#reset {
-    float: left;
-    background-color: #e809ff;
+    background-color: #0055d4;
     width: 12vw;
     height: 5vh;
     margin-left: 50%;
