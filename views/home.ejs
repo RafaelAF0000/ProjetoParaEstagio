@@ -20,6 +20,8 @@
                     <td>Nome</td>
                     <td>CEP</td>
                     <td>CPF</td>
+                    <td>Email</td>
+                    <td>Telefone</td>
                     <td>Estado</td>
                 </tr>
 
@@ -28,6 +30,8 @@
                         <td class = "tdNome"><%= dadosUser[i].nome %></td>
                         <td class = "tdCep"><%= dadosUser[i].cep %></td>
                         <td class = "tdCpf"><%= dadosUser[i].cpf %></td>
+                        <td class = "tdEmail"><%= dadosUser[i].email %></td>
+                        <td class = "tdTelefone"><%= dadosUser[i].telefone %></td>
                         <td class = "tdEstado"><%= dadosUser[i].estado %></td>
                         <form action="/deletarUsuario" method="post">
                             <td class = "temBotao">
@@ -53,9 +57,9 @@
         </div>
         <nav>
             <div id="nav_menu">
-                <a href="/sobre">sobre nos</a>
-                <a href="/aluguel">alugue</a>
-                <a href="contato">contato</a>
+                <a href="/emBreva">sobre nós</a>
+                <a href="/emBreve">aluguel</a>
+                <a href="/emBreve">contato</a>
             </div>
         </nav>
     </header>
@@ -72,6 +76,16 @@
 
     </footer>
 
+    <dialog id = "caixaAlterar">
+        <form action="/alterar" method="post">
+            <div id = "itens">
+                <label>Nome</label><input type="text" name = "nome" required id = "nomeAlterar"> <br>
+                <label>Email</label><input type="email" name = "email" required id = "emailAlterar"> <br>
+                <label>Telefone</label><input type="text" name= "telefone" required id = "telefoneAlterar" oninput = "checkTelefoneMask()" maxlength="13" pattern=".{13}"> <br>
+                <button name = "cpf" id = "botaoConfirmar">Confirmar</button>
+            </div>
+        </form>
+    </dialog>
 
     <script src = "scripts/home.js"></script>
 </body>

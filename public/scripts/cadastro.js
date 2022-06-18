@@ -48,6 +48,7 @@ function cepAutoComplete() {
             
             if(cepDados.erro == "true"){
                 for(i in enderecoCompleto) {
+                    cep.value = ""
                     enderecoCompleto[i].value = ""
                 }
                 alert("Cep Invalido")

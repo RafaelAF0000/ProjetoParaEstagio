@@ -18,21 +18,21 @@
                 <h1>Cadastro</h1>
                 <div id="dados_essenciais">
                     <label>CPF</label>
-                    <input type="text" name= "cpf" required id = "cpf" oninput = "checkCpfMask()" maxlength="14">
+                    <input type="text" name= "cpf" required id = "cpf" oninput = "checkCpfMask()" maxlength="14" pattern=".{14}">
 
                     <label>Nome Completo</label>
                     <input type="text" name= "nome" required >
 
                     <label>E-Mail</label>
-                    <input type="text" name= "email" required>
+                    <input type="email" name= "email" required>
 
                     <label>Telefone</label>
-                    <input type="text" name= "telefone" required id = "telefone" oninput = "checkTelefoneMask()" maxlength="13">
+                    <input type="text" name= "telefone" required id = "telefone" oninput = "checkTelefoneMask()" maxlength="13" pattern=".{13}">
                 </div>
 
                 <div id="localização">
                     <label>CEP</label>
-                    <input type="text" name= "cep" required id = "cep" oninput="checkCepMask()" maxlength="9">
+                    <input type="text" name= "cep" required id = "cep" oninput="checkCepMask()" maxlength="9" pattern=".{9}">
 
                     <label>Cidade</label>
                     <input class = "endereco" type="text" name= "cidade" required>
