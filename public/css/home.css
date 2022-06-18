@@ -6,7 +6,7 @@ body{
 header{
     background-color: rgb(50, 50, 50);
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     position: fixed;
     margin-top: 0px;
     z-index: 1;
@@ -37,7 +37,7 @@ aside{
 footer {
     background-color: rgb(50, 50, 50);
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     margin-top: 90vh;
     position: absolute;
 }
@@ -94,4 +94,25 @@ div#conteudo{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+div#logo{
+    background-image: url(../img/logo.png);
+    width: 6vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+div#nav_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+div#nav_menu > a{
+    margin-left: 10vw;
+    margin-top: 4vh;
 }
