@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     overflow: hidden;
 }
@@ -28,10 +28,14 @@ main{
 aside{
     background-color: rgb(90, 90, 90);
     width: 20vw;
-    height: 80vh;
+    height: 78vh;
     position: absolute;
     right: 0;
-    top: 10vh
+    top: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer {
@@ -66,6 +70,7 @@ select#selectEstado{
 button#mostraDadosUser{
     width: 80px;
     height: 50px;
+    z-index: 2;
 }
 
 table, th, td {
@@ -151,5 +156,9 @@ button#botaoConfirmar{
 }
 
 button {
-    cursor: pointer;
+    cursor: pointer
+}
+
+a {
+    color: white
 }

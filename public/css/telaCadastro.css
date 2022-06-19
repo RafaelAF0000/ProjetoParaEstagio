@@ -5,11 +5,11 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
+body {
     background-image: url("../img/interior1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    height: 100vh;
 }
 
 div#cadastro {
@@ -25,13 +25,16 @@ div#cadastro {
     background-image: linear-gradient(90deg, #0055d4, #00e1ff);
     padding-bottom: 10px;
     border-radius: 30px 60px;
-    box-shadow: 0 0 10px rgba(0, 195, 255, 0.8)
+    box-shadow: 0 0 10px rgba(0, 195, 255, 0.8);
+    padding-top: 10px;
 }
 
 div#cadastro > h1 {
     text-align: center;
-    background-image: linear-gradient(90deg, white, white, rgb(100, 100, 100));
+    margin-bottom: 2vh;
+    background-image: linear-gradient(90deg, white, rgb(169, 169, 169), rgb(130, 130, 130));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     color: black;
 }
@@ -45,13 +48,13 @@ div#cadastro > div#dados_essenciais{
 
 }
 
-div#cadastro > div#localização{
+div#cadastro > div#localização {
     text-align: center;
     width: 50%;
     height: 100%;
     position: absolute;
     right: 0%;
-    top: 6vh
+    top: 10vh
 }
 
 div#cadastro > div#localização,div#dados_essenciais > label{
@@ -70,6 +73,7 @@ div#cadastro > div#localização> input {
     margin-left: 5vw;
     padding: 5px;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 div#cadastro > div#dados_essenciais > input {
@@ -84,25 +88,28 @@ div#cadastro > div#dados_essenciais > input {
     border-bottom: 2px #00e1ff solid;
     margin-left: 5vw;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-div#btn{
+div#btn {
+    margin-top: 8vh;
     width: 100%;
     height: 15vh;
+    z-index: 2;
 }
 
 div#cadastro > div#btn > button {
     background-image: linear-gradient(45deg,#00e1ff, #0166ff);
     width: 12vw;
     height: 5vh;
-    margin-left: 10vw;
+    margin-left: 7vw;
     margin-right: auto;
     border-radius: 15px;
     border: 0px;
 }
 
-div#cadastro > div#btn > button:hover{
-    cursor: pointer;
+div#cadastro > div#btn > button#btn_cad {
+    margin-right: 5.5vw;
 }
 
 div#cadastro > div#dados_essenciais > input:focus{
@@ -113,4 +120,13 @@ div#cadastro > div#dados_essenciais > input:focus{
 div#cadastro > div#localização > input:focus{
     border-bottom: 2px rgb(0, 255, 0) solid;
     color:rgb(0, 255, 0)
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.5s;
+    transform: translateY(-4px)
 }
