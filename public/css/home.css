@@ -162,3 +162,15 @@ button {
 a {
     color: white
 }
+
+button.botaoFunc {
+    background-image: linear-gradient(90deg, black, rgb(64, 64, 64));
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+button.botaoFunc:hover{
+    transition: 0.5s;
+    transform: translateY(-4px);
+}

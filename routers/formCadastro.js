@@ -29,7 +29,7 @@ app.post("/cadastrar", (req, res) => {
                     console.log(error)
                 }
                 else {
-                    res.redirect("/login")
+                    res.redirect("/")
                 }
             })
         } 
