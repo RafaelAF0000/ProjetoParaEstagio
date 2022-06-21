@@ -17,7 +17,7 @@
             </select>
             <h1 id = "errorMessage"></h1>
             <table id = "tabelaUsuarios">
-                <tr>
+                <tr id = "tabelaHeader">
                     <td>Nome</td>
                     <td>CEP</td>
                     <td>CPF</td>
@@ -28,12 +28,12 @@
 
                 <% for(let i = 0; i < dadosUser.length; i++){ %>
                     <tr class = "trDadosUser">
-                        <td class = "tdNome"><%= dadosUser[i].nome %></td>
-                        <td class = "tdCep"><%= dadosUser[i].cep %></td>
-                        <td class = "tdCpf"><%= dadosUser[i].cpf %></td>
-                        <td class = "tdEmail"><%= dadosUser[i].email %></td>
-                        <td class = "tdTelefone"><%= dadosUser[i].telefone %></td>
-                        <td class = "tdEstado"><%= dadosUser[i].estado %></td>
+                        <td class = "tdNome tdDados"><%= dadosUser[i].nome %></td>
+                        <td class = "tdCep tdDados"><%= dadosUser[i].cep %></td>
+                        <td class = "tdCpf tdDados"><%= dadosUser[i].cpf %></td>
+                        <td class = "tdEmail tdDados"><%= dadosUser[i].email %></td>
+                        <td class = "tdTelefone tdDados"><%= dadosUser[i].telefone %></td>
+                        <td class = "tdEstado tdDados"><%= dadosUser[i].estado %></td>
                         <form action="/deletarUsuario" method="post">
                             <td class = "temBotao">
                                 <button class = "deletar" name = "cpf" value = "<%= dadosUser[i].cpf %>">Delete</button>
@@ -49,7 +49,7 @@
     </dialog>
 
     <header>
-        <div id="logo">
+        <img src="img/logo.png">
             
         </div>
         <nav>

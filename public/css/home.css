@@ -69,8 +69,8 @@ dialog#usuarios {
 
 select#selectEstado{
     position: absolute;
-    left: 50px;
-    top: 15px;
+    left: 30px;
+    top: 20px;
     z-index: 2;
 }
 
@@ -81,8 +81,9 @@ button#mostraDadosUser{
 }
 
 table, th, td {
-    border: 1px solid;
     padding: 10px;
+    padding-left: 15px ;
+    padding-right: 15px;
   }
 
 td.temBotao {
@@ -95,7 +96,6 @@ td.temBotao {
 
 td.temBotao > button{
     border: 0px;
-    background-color: rgb(253, 0, 0);
     color: white;
     width: 70px;
     height: 20px;
@@ -103,18 +103,10 @@ td.temBotao > button{
 }
 
 div#conteudo{
+    margin-top: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-div#logo{
-    background-image: url(../img/logo.png);
-    width: 6vw;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 div#nav_menu{
@@ -193,3 +185,32 @@ button.botaoFunc:hover{
     transition: 0.5s;
     transform: translateY(-4px);
 }
+
+select {
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+}
+
+tr#tabelaHeader {
+    background-color: rgb(92, 218, 218);
+}
+
+table {
+    border-spacing: 0;
+    border-bottom: 2px solid rgb(65, 149, 149);
+}
+
+button.alterar { 
+    background-color: rgb(185, 180, 50);
+}
+
+button.deletar {
+    background-color: red;
+}
+
+tr.trDadosUser > td.tdDados {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.415);
+}
+
