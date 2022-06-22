@@ -16,6 +16,7 @@ header{
     z-index: 1;
     display: flex;
     flex-direction: row;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -26,19 +27,38 @@ main{
     margin-left: 0px;
     margin-top: 10vh;
     position: absolute;
+    overflow-y: auto;
+    color: white;
+}
+
+section#aluguel > button {
+    background-color: rgba(128, 128, 128, 0.9);
+    font-size: 15px;
+    color: white;
+    width: 5vw;
+    height: 5vh;
+    box-shadow: 0px 5px 9px rgb(0, 0, 0, 0.8);
+    border: none;
+    border-radius: 10px;
+    margin-left: 25vw;
 
 }
 
+section#aluguel > button#btn_alugar:hover {
+    background-color: rgba(56, 56, 56, 0.9);
+    color: green;
+}
+
 aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: rgb(90, 90, 90);
     width: 20vw;
     height: 78vh;
     position: absolute;
     right: 0;
     top: 12vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -55,6 +75,7 @@ button#deslogar{
     width: 80px;
     height: 50px;
     z-index: 2;
+    box-shadow: 0px 5px 9px rgb(0, 0, 0, 0.8);
 }
 
 dialog#usuarios {
@@ -65,6 +86,9 @@ dialog#usuarios {
     border: 0px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px black;
+    background-image: url(../img/pexels-pixabay-509922.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 select#selectEstado{
@@ -120,6 +144,43 @@ div#nav_menu > a{
     margin-left: 10vw;
     margin-top: 4vh;
 }
+
+div#search-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(150,150,150, 0.9);
+    height: 6vh;
+    width: 22vw;
+    margin-left: 15vw;
+    margin-top: 3vh;
+    padding-left: 5px;
+    border: 0px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.7);
+
+}
+
+div#search-box > input#text-search{
+    background: transparent;
+    outline: none;
+    border: none;
+    flex: left;
+    color: black;
+    width: 80%;
+}
+
+div#search-box > button#btn-search{
+    flex: right;
+    background: transparent;
+    border: none;
+    border-left: 1px solid black;
+    background-color: rgb(194, 194, 194, 0.9);
+    border-radius: 0px 30px 30px 0px;
+
+}
+
+
 
 input {
     margin-top: 10px;
@@ -179,6 +240,7 @@ button.botaoFunc {
     border: none;
     border-radius: 5px;
     color: white;
+    box-shadow: 0px 5px 9px rgb(0, 0, 0, 0.8);
 }
 
 button.botaoFunc:hover{
