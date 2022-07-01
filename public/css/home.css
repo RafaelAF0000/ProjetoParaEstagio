@@ -25,13 +25,17 @@ main{
     width: 80vw;
     height: 80vh;
     margin-left: 0px;
-    margin-top: 10vh;
+    margin-top: 8.5vh;
     position: absolute;
     overflow-y: auto;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vh;
 }
 
-section#aluguel > button {
+button#btn_alugar {
     background-color: rgba(128, 128, 128, 0.9);
     font-size: 15px;
     color: white;
@@ -40,11 +44,10 @@ section#aluguel > button {
     box-shadow: 0px 5px 9px rgb(0, 0, 0, 0.8);
     border: none;
     border-radius: 10px;
-    margin-left: 25vw;
-
+    margin-bottom: 10vh;
 }
 
-section#aluguel > button#btn_alugar:hover {
+button#btn_alugar:hover {
     background-color: rgba(56, 56, 56, 0.9);
     color: green;
 }
@@ -158,26 +161,27 @@ div#search-box{
     border: 0px;
     border-radius: 30px;
     box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.7);
-
 }
 
 div#search-box > input#text-search{
     background: transparent;
     outline: none;
     border: none;
-    flex: left;
     color: black;
     width: 80%;
 }
 
 div#search-box > button#btn-search{
-    flex: right;
-    background: transparent;
     border: none;
     border-left: 1px solid black;
-    background-color: rgb(194, 194, 194, 0.9);
     border-radius: 0px 30px 30px 0px;
-
+    background-image: url("/img/search1.png");
+    background-position: center;
+    background-color: white;
+    background-size: 50% 60%;
+    background-repeat: no-repeat;
+    width: 4vw;
+    height: 6vh;
 }
 
 
@@ -276,3 +280,11 @@ tr.trDadosUser > td.tdDados {
     border-bottom: 1px solid rgba(0, 0, 0, 0.415);
 }
 
+img {
+    border: 2px solid gray;
+}
+
+button#btn-search:hover {
+    transition: 0.5s;
+    opacity: 0.75;
+}
